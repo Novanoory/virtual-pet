@@ -70,3 +70,6 @@ function interactWithPet(pet) {
         }
     } while (action !== "4");
 }
+
+var myPet = createPet();
+interactWithPet(myPet);
