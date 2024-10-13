@@ -5,3 +5,12 @@ function createPet() {
     var happiness = parseInt(prompt("How happy is your pet? (0-100)"), 10);
     var hunger = parseInt(prompt("How hungry is your pet? (0-100)"), 10);
 }
+
+ // Create the pet object
+ var pet = {
+    name: name,
+    type: type,
+    age: age,
+    happiness: happiness,
+    hunger: hunger,
+ }
