@@ -38,3 +38,35 @@ agePet: function() {
 
 return pet;
 }
+
+function interactWithPet(pet) {
+    var action;
+
+    do {
+        action = prompt(
+            "What action would you like to perform with your pet?\n" +
+            "1. Feed\n" +
+            "2. Play\n" +
+            "3. Age\n" +
+            "4. Exit\n" +
+            "Please enter the number of your choice:"
+        );
+
+        switch (action) {
+            case "1":
+                pet.feed();
+                break;
+            case "2":
+                pet.play();
+                break;
+            case "3":
+                pet.agePet();
+                break;
+            case "4":
+                alert(`Thanks for interacting with ${pet.name}!`);
+                break;
+            default:
+                alert("Invalid choice! Please enter a number from 1 to 4.");
+        }
+    } while (action !== "4");
+}
